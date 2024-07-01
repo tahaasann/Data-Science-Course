@@ -41,3 +41,8 @@
 ---
 
 - Veri bilimi bir ***süreçtir***. Yapay zeka ***ürünleşmiş son nokta*** olarak görülür.
+  
+
+---
+
+![Hangi title ne üzerine uzman](img/Screenshot_3.png)
