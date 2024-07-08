@@ -53,6 +53,34 @@ b = 10
 a*b
 
 len(gel_yaz)
+len("gelecegi_yazanlar")
+
+#------------------------------------------------
+# BÜYÜK/KÜÇÜK HARF DÖNÜŞÜMLERİ: UPPER & LOWER METODLARI
+# Bir string ifadeyi komple büyük veya küçük hale getirir. Elimizde özellikle yapısal olmayan veriler, metinler olduğunda; bu metinleri belirli düzende yapısal formlara getirmek istediğimizde çok sık kullanılan yapılardır.
+# Kullanıcının girdiği String ifadeleri standartize etmek için kullanılan yapılardır.
+# Değişken ve dosya isimlerini stardartize haline getirmek için kullanılır.
+
+gel_yaz.upper() # 'GELECEGI_YAZANLAR'
+gel_yaz.lower() # 'gelecegi_yazanlar'
+
+gel_yaz.islower() # lower mı öğrenmek için
+B = gel_yaz.upper()
+
+B.isupper() # True
+B.islower() # False
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
