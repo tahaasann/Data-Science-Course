@@ -125,14 +125,27 @@ type(1+2j) #complex
 a = 100.2
 
 #--------------------------------------------------
+# TİP(TYPE) DÖNÜŞÜMLERİ
+## Bazı durumlarda değişkenlerin tipleri arasında dönüşümler yapmak gerekir. String -> İnteger || Integer -> Float gibi
 
+# Mesela kullanıcıdan alınan iki ifadenin çarpımını hesaplamak istediğimizi düşünelim. Kullanıcının girdiği ifadeler genel olarak string olarak alınır. Ardından bu string değişkenlerin tipini integer çevirmemiz gerekir.
 
+toplama_bir = input() # input() fonksiyonu kullanıcıdan bilgi almak için kullanılır.
+toplama_iki = input()
 
+type(toplama_bir) # str
 
+toplama_bir + toplama_iki # 57
 
+int(toplama_bir) + int(toplama_iki) # 12
 
+int(11.0) # 11
 
+float(12) # 12.0
 
+type(str(12)) # str
+
+#--------------------------------------------------
 
 
 
