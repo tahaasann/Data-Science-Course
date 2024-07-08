@@ -98,7 +98,16 @@ dir(gel_yaz)
 dir(str)
 
 #-------------------------------------------------
+# KARAKTER DİZİLERİNDE ALTKÜME İŞLEMLERİ(SUBSTRINGS)
+gel_yaz[0] # 'g'
 
+gel_yaz[20] # IndexError: Verilmiş aralık, indexin dışında.
+
+gel_yaz[0:3] # 'gel'
+
+gel_yaz[3:7] # 'eceg'
+
+#--------------------------------------------------
 
 
 
