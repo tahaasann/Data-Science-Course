@@ -78,6 +78,81 @@ gel_yaz.replace("e", "a") # galacagi_yazanlar
 
 gel_yaz.replace("a", "i") # gelecegi_yizinlir
 
+#-------------------------------------------------
+# KARAKTER KIRPMA İŞLEMLERİ(STRİP METODU)
+gel_yaz = " gelecegi_yazanlar "
+gel_yaz.strip() # 'gelecegi_yazanlar'
+
+gel_yaz = "*gelecegi_yazanlar*"
+gel_yaz.strip("*")
+
+gel_yaz = "lgelecegi_yazanlarl"
+gel_yaz.strip("l")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
