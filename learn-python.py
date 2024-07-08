@@ -89,10 +89,15 @@ gel_yaz.strip("*")
 gel_yaz = "lgelecegi_yazanlarl"
 gel_yaz.strip("l")
 
+#-------------------------------------------------
+# METODLARA GENEL BAKIŞ
+## Python'da üzerinde çalışıyor olduğumuz veri tipine uygulanabilecek olan methodları görmek için dir fonksiyonunu kullanabiliriz.
+gel_yaz = "gelecegi_yazanlar"
 
+dir(gel_yaz)
+dir(str)
 
-
-
+#-------------------------------------------------
 
 
 
