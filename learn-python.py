@@ -70,8 +70,13 @@ B = gel_yaz.upper()
 B.isupper() # True
 B.islower() # False
 
+#-------------------------------------------------
+# REPLACE (YER DEĞİŞTİRME) METODU
+# Elimizdeki stringdeki karakterleri değiştirmek istediğimizde kullanılır.
 
+gel_yaz.replace("e", "a") # galacagi_yazanlar
 
+gel_yaz.replace("a", "i") # gelecegi_yizinlir
 
 
 
