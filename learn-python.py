@@ -146,9 +146,17 @@ float(12) # 12.0
 type(str(12)) # str
 
 #--------------------------------------------------
+#KOD ÇIKTISINI EKRANA YAZDIRMAK: PRINT
 
+print("HELLO AI ERA")
 
+print("gelecegi","yazanlar") # gelecegi yazanlar
 
+print("gelecegi","yazanlar", sep = "_") # gelecegi_yazanlar
+# Ayrıca birleştireceğimiz iki stringin aralarına eklemek istediğimiz herhangi bir şey varsa sep = "istediğimiz herhangi bir sembol veya boşluk"  ekleyebiliriz.
+#* Fonksiyonların genel amaçlarını biçimlendirmek için kullanılan alt görev belirticilere *argüman* denir. Bu mantığa göre "sep" bir argümandır. Printin ana amacını sep ile biçimlendirdik.
+
+#-------------------------------------------------
 
 
 
