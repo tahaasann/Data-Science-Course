@@ -1,3 +1,4 @@
+# SAYILAR VE STRINGLERE GIRIS
 # istatistik açısından (sayısal değişken)
 9 #integer - kesikli
 9.2 #float - sürekli
@@ -14,3 +15,26 @@ print('HELLO AI ERA') # İçine yazdığımız ifadeyi konsol ekranına yazdır�
 type(9) # herhangi bir nesnenin tipini belirlemek için
 type(9.2)
 type("HELLO AI ERA")
+
+#----------------------------------------------
+
+# STRING-KARAKTER DİZİLERİNİ YAKINDAN TANIYALIM
+## Genellikle veri yapılarında, elde tutmuş olduğumuz veriler ve üzerinde çalışıyor olduğumuz veriler genelde STRİNG yapıda olabiliyorlar.
+
+""
+''
+
+123
+type(123) # integer
+"123"
+type('123') # string
+
+# en kapsayıcı olarak '' tek tırnak kullanılması önerilir
+"a" + "b" # ab
+'a'' b'   #ab
+"a" + "-b" # Stringler bir araya getirmek amaçlı kullanılır.
+"a" - "b" # TypeError: 2 string birbirinden çıkarılamaz
+"a"*3 # aaa
+"a "*3 # a a a  Bir araya getirmek amaçlı
+"a"/3 # TypeError
+
