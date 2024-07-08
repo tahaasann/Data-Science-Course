@@ -38,3 +38,34 @@ type('123') # string
 "a "*3 # a a a  Bir araya getirmek amaçlı
 "a"/3 # TypeError
 
+#-----------------------------------------------
+
+# UZUNLUK(ELEMAN SAYISI) BİLGİSİNE ERİŞMEK: len METODU
+# Metodlar, veri yapıları veya belirli yapılara uygulanan çeşitli fonksiyonlardır. 
+## len(sadece stringlere özel bir metod değildir. Birçok veri yapısıyla kullanılabilen bir metod/fonksiyondur.)
+
+gel_yaz = "gelecegi_yazanlar"
+#del mvk
+
+a = 9
+b = 10
+
+a*b
+
+len(gel_yaz)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
