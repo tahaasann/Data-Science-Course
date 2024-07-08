@@ -108,11 +108,23 @@ gel_yaz[0:3] # 'gel'
 gel_yaz[3:7] # 'eceg'
 
 #--------------------------------------------------
+# DEĞİŞKENLER
 
+a = 99999 # atama işlemi sonunda oluşan nesne bir değişkendir. Her değişkenin bir tipi vardır. a değişkeninin tipi integer'dır.
+b = "ali_uzaya_git"
+c = a*2
 
+a/c
+a*c
+a*5
 
+type(100) #integer
+type(100.2) #float
+type(1+2j) #complex
 
+a = 100.2
 
+#--------------------------------------------------
 
 
 
