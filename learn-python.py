@@ -398,24 +398,60 @@ sozluk # {'REG': {'RMSE': 10, 'MSE': 20, 'SSE': 30}, 'LOJ': {'RMSE': 10, 'MSE': 
 sozluk["REG"]["SSE"] # 30
  
 #-------------------------------------------------
+# SÖZLÜK(DİCTİONARY) ELEMAN EKLEME & DEĞİŞTİRME
+sozluk = {
+        "REG" : "Regresyon Modeli",
+        "LOJ" : "Lojistik Regresyon",
+        "CART": "Classification and Reg"
+    }
 
+sozluk["GBM"] = "Gradient Boosting Mac"
 
+sozluk # {'REG': 'Regresyon Modeli',
+       # 'LOJ': 'Lojistik Regresyon',
+       # 'CART': 'Classification and Reg',
+       # 'GBM': 'Gradient Boosting Mac'}
 
+sozluk
 
+sozluk["REG"] = "Çoklu Doğrusal Regresyon"
 
+sozluk # {'REG': 'Çoklu Doğrusal Regresyon',
+       # 'LOJ': 'Lojistik Regresyon',
+       # 'CART': 'Classification and Reg',
+       # 'GBM': 'Gradient Boosting Mac'}
+       
+# Eğer sözlük ifadesini yazdıktan sonra köşeli parantez içerisine olmayan bir key yazıldığında, program onu "benim sözlüğümde böyle bir key yok, o zaman bu verilen key için yeni bir değer oluşturayım" der ve yeni key-value çifti oluşturur. 
 
+dir(sozluk)  
 
+sozluk[1] # KeyError - Böyle bir ifade yok hatası aldık
 
+sozluk[1] = "Yapay Sinir Ağları"
 
+sozluk # {'REG': 'Çoklu Doğrusal Regresyon',
+         #'LOJ': 'Lojistik Regresyon',
+         #'CART': 'Classification and Reg',
+         #'GBM': 'Gradient Boosting Mac',
+         #1: 'Yapay Sinir Ağları'}
 
+l = [1] # yeni bir liste
 
+sozluk[l] = "yeni bir şey" # TypeError - Sözlüklerde key değerleri ancak sabit veri yapılarıyla oluşturulabilir(stringler, sayılar vb.). 
+# Key'ler sabitliğinden endişe etmeyeceğimiz referans değerlerdir. Value'lar değişebilir, sorun değil.
 
+t = ("tuple",) # tuple, sabit veri yapısır
 
+sozluk[t] = "yeni bir şey"
 
+sozluk # {'REG': 'Çoklu Doğrusal Regresyon',
+       #'LOJ': 'Lojistik Regresyon',
+       #'CART': 'Classification and Reg',
+       #'GBM': 'Gradient Boosting Mac',
+       #1: 'Yapay Sinir Ağları',
+       #('tuple',): 'yeni bir şey'}
 
-
-
-
+#-------------------------------------------------
 
 
 
