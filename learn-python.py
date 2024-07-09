@@ -320,12 +320,19 @@ t = ("eleman",)
 type(t) #tuple
 
 #-------------------------------------------------
+# TUPLE(DEMET) ELEMAN İŞLEMLERİ
+t = ("ali","veli",1,2,3,[1,2,3,4])
+t # ('ali', 'veli', 1, 2, 3, [1, 2, 3, 4])
 
+#tuple elemanlarına erişmek, liste elemanlarına erişmek gibidir. İndeks üzerinden elemanlara erişilebilir.
+t[1] # 'veli'
+t[0:3] # ('ali', 'veli', 1)
 
+t[2] = 99 # TypeError, tuple nesnesi atama işlemine izin vermez.
 
+# bazı durumlarda veri yapıları sabit dursun ve değişmeyeceğine emin olmak istediğimiz durumlarda tuple kullanılır.
 
-
-
+#-------------------------------------------------
 
 
 
