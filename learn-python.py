@@ -244,17 +244,31 @@ liste # ['ali', 'veli', 'isik', 'berkcan']
 liste.remove("berkcan")
 liste # ['ali', 'veli', 'isik']
 
+#-------------------------------------------------
+# INDEKSE GÖRE ELEMEN EKLEME & SİLME: insert & pop
+liste
 
+## insert
+liste.insert(0, "ayse")
+liste # ['ayse', 'ali', 'veli', 'isik']
 
+liste.insert(2, "mehmet")
+liste # ['ayse', 'ali', 'mehmet', 'veli', 'isik']
 
+liste.insert(5, "berk")
+liste # ['ayse', 'ali', 'mehmet', 'veli', 'isik', 'berk']
 
+liste.insert(len(liste), "beren")
+liste # ['ayse', 'ali', 'mehmet', 'veli', 'isik', 'berk', 'beren']
 
+##pop
+liste.pop(0)
+liste # ['ali', 'mehmet', 'veli', 'isik', 'berk', 'beren']
 
+liste.pop(4)
+liste # ['ali', 'mehmet', 'veli', 'isik', 'beren']
 
-
-
-
-
+#-------------------------------------------------
 
 
 
