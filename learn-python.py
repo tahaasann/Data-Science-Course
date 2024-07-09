@@ -487,25 +487,34 @@ l[0] # 'ali'
 s[0] # TypeError: set nesnesi index işlemini desteklemiyor
 
 #-------------------------------------------------
+# SETLERDE ELEMAN EKLEME & ÇIKARMA
+l = ["gelecegi","yazanlar"]
 
+s = set(l)
+s # {'gelecegi', 'yazanlar'}
 
+dir(s)
 
+s.add("ile")
+s # {'gelecegi', 'ile', 'yazanlar'}
 
+s.add("gelecege_git")
+s # {'gelecege_git', 'gelecegi', 'ile', 'yazanlar'}
 
+# add ile setimize yeni değerler eklediğimizde, yeni gelen değerler sette rastgele bir yere gidebilir.
 
+s.add("ile")
+s
 
+s.remove("ile")
+s
 
+s.remove("ile") # KeyError, bu şeyi bulamadım
+s
 
+s.discard("ali") # Bu hata vermez ama bir işlemde de bulunmaz
 
-
-
-
-
-
-
-
-
-
+#-------------------------------------------------
 
 
 
