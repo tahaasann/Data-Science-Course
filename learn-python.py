@@ -304,6 +304,63 @@ liste.clear()
 liste # []
 
 #-------------------------------------------------
+# TUPLE(DEMET) OLUŞTURMA
+# Tuple'lar kapsayıcıdır(birbirinden farklı veri tiplerini barındırabilirler), sıralıdır(içerisinde indeks işlemleri yapılabilir) fakat listelerden farklı olarak değiştirilemezlerdir(tuple oluştuktan sonra değişemez).
+
+t = ("ali","veli",1,2,3.2,[1,2,3,4])
+dir(t)
+
+t = "ali","veli",1,2,3.2,[1,2,3,4]
+
+#tuple() fonksiyon ile de tuple oluşturulabilir
+t = ("eleman") # str döndü, tek elemanlı tuple oluştururken eleamanın sonuna virgül atmak gerekir.
+type(t) #str
+
+t = ("eleman",)
+type(t) #tuple
+
+#-------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
