@@ -269,14 +269,41 @@ liste.pop(4)
 liste # ['ali', 'mehmet', 'veli', 'isik', 'beren']
 
 #-------------------------------------------------
+# DİĞER LİSTE METODLARI
 
+liste = ["ali","veli","isik","ali","veli"]
 
+# count
+liste.count("ali") # 2
+liste.count("veli") #2
+liste.count("isik") #1
 
+#copy
+liste_yedek = liste.copy()
 
+#extend
+liste.extend(["a","b",10])
+liste # ['ali', 'veli', 'isik', 'ali', 'veli', 'a', 'b', 10]
 
+#index
+liste.index("ali") # 0
 
+#reverse()
+liste.reverse()
+liste # [10, 'b', 'a', 'veli', 'ali', 'isik', 'veli', 'ali']
 
+#sort()
+liste.sort() # TypeError: Listede hem str hem de int değerler olduğu için sıralayamıyor
 
+liste = [10,40,5,90]
+liste.sort()
+liste # [5, 10, 40, 90]
+
+#clear
+liste.clear()
+liste # []
+
+#-------------------------------------------------
 
 
 
