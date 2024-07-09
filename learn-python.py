@@ -172,9 +172,17 @@ liste2 = ["a", 19.3, 90, notlar]
 len(liste2) # 4
 
 #-------------------------------------------------
+# LİSTE İÇİ TİP SORGULAMA
 
+type(liste2[0]) #str
+liste2[0] # 'a'
+liste2[3] # [90, 80, 70, 50]
 
+tum_liste = [liste, liste2] # [['a', 19.3, 90], ['a', 19.3, 90, [90, 80, 70, 50]]]
 
+del tum_liste # tum_listeyi bellekten siler
+
+#-------------------------------------------------
 
 
 
