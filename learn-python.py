@@ -452,6 +452,62 @@ sozluk # {'REG': 'Çoklu Doğrusal Regresyon',
        #('tuple',): 'yeni bir şey'}
 
 #-------------------------------------------------
+#SET(KÜME) OLUŞTURMA
+# Sırasızdır, Değerleri eşsizdir(unique), Değiştirilebilirdir, Farklı tipleri barındırabilir.
+# Performans odaklı bir veri yapısıdır. Eşsiz değerler istediğimizde kullanırız.
+
+s = set()
+s
+
+l = [1, "a", "ali", 123]
+s = set(l)
+s # {1, 123, 'a', 'ali'}
+
+t = ("a", "ali")
+s = set(t)
+s # {'a', 'ali'}
+
+ali = "lutfen_ata_bakma_uzaya_git"
+type(ali)
+
+s = set(ali)
+s # {'_', 'a', 'b', 'e', 'f', 'g', 'i', 'k', 'l', 'm', 'n', 't', 'u', 'y', 'z'} tüm karakterler tek bir defa yazılmış
+
+# Set oluşturma aşamasında verdiğimiz şeyler eğer birden çok sayıda ise, set bunları tek ve unique olacak şekilde düzenler
+
+l = ["ali","lütfen","ata","bakma","uzaya","git","git","ali","git"]
+l
+s = set(l)
+s # {'ali', 'ata', 'bakma', 'git', 'lütfen', 'uzaya'}
+
+len(s) # 6
+
+l[0] # 'ali'
+
+s[0] # TypeError: set nesnesi index işlemini desteklemiyor
+
+#-------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
