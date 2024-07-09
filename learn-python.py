@@ -157,6 +157,21 @@ print("gelecegi","yazanlar", sep = "_") # gelecegi_yazanlar
 #* Fonksiyonların genel amaçlarını biçimlendirmek için kullanılan alt görev belirticilere *argüman* denir. Bu mantığa göre "sep" bir argümandır. Printin ana amacını sep ile biçimlendirdik.
 
 #-------------------------------------------------
+# VERI YAPILARI - LISTE OLUSTURMA
+# Python'da kullanılan birden çok veri yapısı vardır: Listeler, tupplelar, dictonary vb... en sık kullanılan veri yapısı listelerdir.
+# Listeler değiştirilebilir, kapsayıcıdır (farklı tipte verileri tutabilir), sıralıdır.
+# []
+# list()
+
+notlar = [90,80,70,50]
+type(notlar) # list
+
+liste = ["a", 19.3, 90]
+liste2 = ["a", 19.3, 90, notlar] 
+
+len(liste2) # 4
+
+#-------------------------------------------------
 
 
 
