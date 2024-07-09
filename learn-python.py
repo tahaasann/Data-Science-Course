@@ -180,19 +180,32 @@ liste2[3] # [90, 80, 70, 50]
 
 tum_liste = [liste, liste2] # [['a', 19.3, 90], ['a', 19.3, 90, [90, 80, 70, 50]]]
 
-del tum_liste # tum_listeyi bellekten siler
+#del tum_liste # tum_listeyi bellekten siler
 
 #-------------------------------------------------
+# LİSTE ELEMANLARINA ERİŞMEK
 
+liste = [10, 20, 30, 40, 50]
 
+liste[0]
+liste[1]
 
+liste[6] # IndexError
 
+liste[0:2] # [10, 20]
+liste[:2] # [10, 20]
+liste[2:] # [30, 40, 50]
 
+yeni_liste = ["a", 10, [20, 30, 40, 50]]
+yeni_liste
 
+yeni_liste[2] # [20, 30, 40, 50]
 
+yeni_liste[0:2] # ['a', 10]
 
-
-
+yeni_liste[2][1] # 30
+ 
+#-------------------------------------------------
 
 
 
