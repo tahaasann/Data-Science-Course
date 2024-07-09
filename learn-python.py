@@ -230,12 +230,19 @@ liste # ['ali', 'veli', 'berkcan', 'ayse', 'kemal']
 liste # ['ali', 'veli', 'ayse', 'kemal']
 
 #-------------------------------------------------
+# METODLAR İLE ELEMAN EKLEME & SİLME: (append & remove)
+liste = ["ali", "veli", "isik"]
 
+dir(liste)
 
+liste # ['ali', 'veli', 'isik']
 
+#append
+liste.append("berkcan") # bu metod kalıcı değişikliğe sebep oldu. bazı metodlar kalıcı değişikliğe yol açmaz.
+liste # ['ali', 'veli', 'isik', 'berkcan']
 
-
-
+liste.remove("berkcan")
+liste # ['ali', 'veli', 'isik']
 
 
 
