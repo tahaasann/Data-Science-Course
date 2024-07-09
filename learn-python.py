@@ -206,12 +206,30 @@ yeni_liste[0:2] # ['a', 10]
 yeni_liste[2][1] # 30
  
 #-------------------------------------------------
+#LİSTELERE ELEMAN EKLEME, DEĞİŞTİRME, SİLME İŞLEMLERİ
+#Eleman değiştirme
+liste = ["ali","veli","berkcan","ayse"]
+liste # ['ali', 'veli', 'berkcan', 'ayse']
 
+liste[1] = "velinin_babası"
+liste # ['ali', 'velinin_babası', 'berkcan', 'ayse']
 
+liste[1]= "veli"
+liste[0:3] = "alinin_babasi", "velinin_babasi", "berkcanin_babasi"
 
+liste # ['alinin_babasi', 'velinin_babasi', 'berkcanin_babasi', 'ayse']
 
+liste = ["ali","veli","berkcan","ayse"]
 
+liste = liste + ["kemal"]
 
+liste # ['ali', 'veli', 'berkcan', 'ayse', 'kemal']
+
+# del liste[2] # listedeki 2. indeksi siler
+
+liste # ['ali', 'veli', 'ayse', 'kemal']
+
+#-------------------------------------------------
 
 
 
