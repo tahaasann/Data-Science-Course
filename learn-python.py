@@ -158,7 +158,7 @@ print("gelecegi","yazanlar", sep = "_") # gelecegi_yazanlar
 
 #-------------------------------------------------
 # VERI YAPILARI - LISTE OLUSTURMA
-# Python'da kullanılan birden çok veri yapısı vardır: Listeler, tupplelar, dictonary vb... en sık kullanılan veri yapısı listelerdir.
+# Python'da kullanılan birden çok veri yapısı vardır: Listeler, tuplelar, dictonary vb... en sık kullanılan veri yapısı listelerdir.
 # Listeler değiştirilebilir, kapsayıcıdır (farklı tipte verileri tutabilir), sıralıdır.
 # []
 # list()
@@ -245,7 +245,7 @@ liste.remove("berkcan")
 liste # ['ali', 'veli', 'isik']
 
 #-------------------------------------------------
-# INDEKSE GÖRE ELEMEN EKLEME & SİLME: insert & pop
+# INDEKSE GÖRE ELEMAN EKLEME & SİLME: insert & pop
 liste
 
 ## insert
@@ -313,7 +313,7 @@ dir(t)
 t = "ali","veli",1,2,3.2,[1,2,3,4]
 
 #tuple() fonksiyon ile de tuple oluşturulabilir
-t = ("eleman") # str döndü, tek elemanlı tuple oluştururken eleamanın sonuna virgül atmak gerekir.
+t = ("eleman") # str döndü, tek elemanlı tuple oluştururken elemanın sonuna virgül atmak gerekir.
 type(t) #str
 
 t = ("eleman",)
@@ -333,22 +333,71 @@ t[2] = 99 # TypeError, tuple nesnesi atama işlemine izin vermez.
 # bazı durumlarda veri yapıları sabit dursun ve değişmeyeceğine emin olmak istediğimiz durumlarda tuple kullanılır.
 
 #-------------------------------------------------
+# SÖZLÜK(DİCTİONARY) OLUŞTURMA - VERİ YAPILARI
+# Sözlükler, Kapsayıcıdır, Sırasızdır, Değiştirilebilir
+# Anahtar ifadeler(key) ve bu anahtar ifadelerin karşılıklarının(value) bir arada tutulduğu veri yapılarıdır. Referanslı bir veri yapısıdır.
+# Listelerde ve Tuplelarda olduğu gibi index işlemleri yapılamaz. 
 
+sozluk = {
+        "REG" : "Regresyon Modeli",
+        "LOJ" : "Lojistik Regresyon",
+        "CART": "Classification and Reg"
+    }
 
+len(sozluk) # 3
 
+sozluk = {
+        "REG" : 11,
+        "LOJ" : 22,
+        "CART": 33
+    }
 
+sozluk = {
+        "REG" : ["RMSE",11],
+        "LOJ" : ["MSE",22],
+        "CART": ["SSE",33]
+    }
 
+sozluk
 
+#-------------------------------------------------
+# SÖZLUK(DİCTİONARY) ELEMAN SEÇME İŞLEMLERİ
 
+sozluk = {
+        "REG" : "Regresyon Modeli",
+        "LOJ" : "Lojistik Regresyon",
+        "CART": "Classification and Reg"
+    }
 
+sozluk[0] # KeyError: İndekslenemez(Sırasız) olduğu için bu hatayı aldık
 
+sozluk["REG"] # 'Regresyon Modeli'
 
+sozluk = {
+        "REG" : ["RMSE",11],
+        "LOJ" : ["MSE",22],
+        "CART": ["SSE",33]
+    }
 
+sozluk["REG"] # ['RMSE', 11]
 
+sozluk = {
+        "REG" : {"RMSE": 10,
+                 "MSE": 20,
+                 "SSE": 30},
+        "LOJ" : {"RMSE": 10,
+                 "MSE": 20,
+                 "SSE": 30},
+        "CART": {"RMSE": 10,
+                 "MSE": 20,
+                 "SSE": 30}
+    }
 
+sozluk # {'REG': {'RMSE': 10, 'MSE': 20, 'SSE': 30}, 'LOJ': {'RMSE': 10, 'MSE': 20, 'SSE': 30}, 'CART': {'RMSE': 10, 'MSE': 20, 'SSE': 30}}
 
-
-
+sozluk["REG"]["SSE"] # 30
+ 
+#-------------------------------------------------
 
 
 
