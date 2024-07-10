@@ -541,7 +541,7 @@ set2 - set1 # {2}
 set1 = set([1,3,5])
 set2 = set([1,2,3])
 
-set1.intersection(set2) # {1, 3}
+set1.intersection(set2) # {1, 3} iki kümenin kesişimi
 set2.intersection(set1) # {1, 3}
 
 set1 & set2 # {1, 3}
@@ -554,6 +554,87 @@ set1.intersection_update(set2) # set1'in set2'yle kesişim kümesi set1'in yeni 
 set1 # {1, 3}
 
 #-------------------------------------------------
+# SETLERDE SORGU İŞLEMLERİ
+# Kod akışı içerisinde kümülatif bazı işlemler gerçekleşirken setler arasında kesişimin boş olup olmadığını sorgulamak gibi, bir set diğer seti kapsar mı? gibi sorgulamaların fonksiyonel anlamda yapıldığı işlemlerdir.
+
+set1 = set([7,8,9])
+set2 = set([5,6,7,8,9,10])
+
+
+# iki kümenin kesişiminin boş olup olmadığının sorgulanması
+set1.isdisjoint(set2) # False   İki kümenin kesişimi boş mu?
+
+# Bir kümenin bütün elemanlarının başka bir küme içerisinde yer alıp almadığı
+set1.issubset(set2) # True, set1 set2'nin alt kümesidir
+
+# Bir küme diğer kümeyi kapsıyor mu?
+set2.issuperset(set1) # True, evet set2 set1'i kapsıyor
+
+#-------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
