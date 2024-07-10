@@ -575,12 +575,12 @@ set2.issuperset(set1) # True, evet set2 set1'i kapsıyor
 # Fonksiyon ve döküman okuryazarlığı bir yazılımcının en önemli özelliklerindendir.
 
 print("merhaba", "dünya", sep="_")
-?print # fonksiyon hakkında bilgi verir
+#?print # fonksiyon hakkında bilgi verir
 print()
 
 len("a")
 
-?len
+#?len
 #-------------------------------------------------
 # FONKSİYONLAR NASIL YAZILIR?
 # Matematiksel işlemler
