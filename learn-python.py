@@ -515,6 +515,26 @@ s
 s.discard("ali") # Bu hata vermez ama bir işlemde de bulunmaz
 
 #-------------------------------------------------
+ #SETLERDE FARK İŞLEMLERİ: difference & symmetric_difference
+#======================================================
+#  difference() ile iki kumenin farkını yada "-" ifadesi
+#  intersection() iki küme kesişimi yada "&" ifadesi
+#  union() iki kümenin birleşimi
+#  symmetric_difference() ikisinde de olmayanları.
+#======================================================
+ 
+# difference
+set1 = set([1,3,5])
+set2 = set([1,2,3])
+
+set1.difference(set2) # 5  set1'de olup set2'de olmayan değerler
+
+set2.difference(set1) # 2  set2'de olup set1'de olmayan değerler
+
+set1.symmetric_difference(set2) # {2, 5} ikisinde de olmayanlar
+
+set1 - set2 # {5}
+set2 - set1 # {2}
 
 
 
