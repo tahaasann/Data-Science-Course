@@ -571,19 +571,34 @@ set1.issubset(set2) # True, set1 set2'nin alt kümesidir
 set2.issuperset(set1) # True, evet set2 set1'i kapsıyor
 
 #-------------------------------------------------
+# FONKSİYONLARA GİRİŞ VE FOKSİYON OKURYAZARLIĞI
+# Fonksiyon ve döküman okuryazarlığı bir yazılımcının en önemli özelliklerindendir.
 
+print("merhaba", "dünya", sep="_")
+?print # fonksiyon hakkında bilgi verir
+print()
 
+len("a")
 
+?len
+#-------------------------------------------------
+# FONKSİYONLAR NASIL YAZILIR?
+# Matematiksel işlemler
+4*4 # 16
+4/4 # 1.0
+5-1 # 4
+6+3 # 9
+3**2 # 9
+3**3 # 27
 
+# Kendi fonksiyonunu hazırla
+def kare_al(x):
+    print(x**2)
+    
 
-
-
-
-
-
-
-
-
+kare_al(3) # 9
+#-------------------------------------------------
+    
 
 
 
