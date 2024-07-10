@@ -531,16 +531,29 @@ set1.difference(set2) # 5  set1'de olup set2'de olmayan değerler
 
 set2.difference(set1) # 2  set2'de olup set1'de olmayan değerler
 
+# symmetric_difference
 set1.symmetric_difference(set2) # {2, 5} ikisinde de olmayanlar
 
 set1 - set2 # {5}
 set2 - set1 # {2}
 
+# intersection
+set1 = set([1,3,5])
+set2 = set([1,2,3])
 
+set1.intersection(set2) # {1, 3}
+set2.intersection(set1) # {1, 3}
 
+set1 & set2 # {1, 3}
 
+# union
+birlesim = set1.union(set2) # {1, 2, 3, 5}
+birlesim
 
+set1.intersection_update(set2) # set1'in set2'yle kesişim kümesi set1'in yeni hali olur.
+set1 # {1, 3}
 
+#-------------------------------------------------
 
 
 
