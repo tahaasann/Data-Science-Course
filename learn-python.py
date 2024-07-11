@@ -843,14 +843,32 @@ for i in ogrenci: # for döngüsü
                 #berk
 
 #-------------------------------------------------
+# FOR - ÖRNEK
 
+maaslar = [1000,2000,3000,4000,5000]
 
+maaslar[0]
+maaslar[1]
+maaslar[2]
+maaslar[3]
+maaslar[4]
 
+for maas in maaslar:
+    print(maas*2) #2000
+                  #4000
+                  #6000
+                  #8000
+                  #10000
 
+for i in maaslar:
+    print(i)
 
+toplam_maas = 0
+for i in maaslar:
+    toplam_maas += i
+    print(toplam_maas) # 15000
 
-
-
+#-------------------------------------------------
 
 
 
