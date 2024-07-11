@@ -734,11 +734,29 @@ sinir == 5000 # True
 5 == 5 # True
 
 #-------------------------------------------------
+# İF
 
+sinir = 50000 # Geliri 50000 TL'den düşük olan mağazaları kapat.
 
+gelir = 40000
 
+gelir < sinir # True
 
+if gelir < sinir: 
+    print("Gelir sinirdan küçük")
+    print(gelir*2)
 
+gelir = 60000
+
+gelir < sinir # False
+
+if gelir < sinir: 
+    print("Gelir sinirdan küçük") # False geldiği için bir çıktı vermedi.
+    
+if gelir > sinir: 
+    print("Gelir sinirdan büyük") # Gelir sinirdan büyük
+    
+#-------------------------------------------------
 
 
 
