@@ -598,16 +598,23 @@ def kare_al(x):
 
 kare_al(3) # 9
 #-------------------------------------------------
-    
+# BİLGİ NOTUYLA ÇIKTI ÜRETMEK
 
+def kare_al(x):
+    print("Girilen sayının  karesi: " + x**2)
 
+kare_al(3) # TypeError, String ifadeler sadece string ifadeler ile birleştirilebilir.
 
+def kare_al(x):
+    print("Girilen sayının  karesi: " + str(x**2))
 
+kare_al(3) # Girilen sayının  karesi: 9
 
+def kare_al(x):
+    print("Girilen sayı: " + str(x) +  
+          ", Karesi: " + str(x**2))
 
-
-
-
+kare_al(3) # Girilen sayı: 3, Karesi: 9
 
 
 
