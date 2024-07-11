@@ -721,9 +721,19 @@ def eleman_ekle(y):
 eleman_ekle(5) # NameError: X bulunamadı. Çünkü x'i sildik.
 
 #-------------------------------------------------
+# TRUE-FALSE SORGULAMALARI - KARAR-KONTROL YAPILARI
+#True-false sorgu mekanizmalarıdır
+sinir = 5000
 
+sinir == 4000 # False
 
+sinir == 5000 # True
 
+5 == 4 # False
+
+5 == 5 # True
+
+#-------------------------------------------------
 
 
 
