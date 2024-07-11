@@ -661,18 +661,29 @@ def direk_hesap(isi, nem, sarj): # ihtiyaca fonksiyon giydirmek
 direk_hesap(25, 40, 70) # 0.9285714285714286
 
 #-------------------------------------------------
+# FONKSİYON ÇIKTILARINI GİRDİ OLARAK KULLANMAK: return
 
+def direk_hesap(isi, nem, sarj): 
+    print((isi + nem) / sarj)
 
+cikti = direk_hesap(25, 40, 70) # NoneType Object
+cikti # cikti
+print(cikti) # none, direk_hesap'ın çıktısını işleyemedik
 
+direk_hesap(25, 40, 70) * 9 # TypeError
 
+def direk_hesap(isi, nem, sarj): 
+    return (isi + nem) / sarj
 
+direk_hesap(25, 40, 70) # 0.9285714285714286, çıktı hesabı yine geldi
 
+cikti = direk_hesap(25, 40, 70) * 9 # 8.357142857142858 bu sefer hata vermedi, çünkü return kullandık
+cikti # 8.357142857142858
+print(cikti) # 8.357142857142858
 
+# Eğer bir fonksiyonun çıktısını başka bir fonksiyonun veya işlemin girdisi olarak kullanmak istiyorsak, bu durumda return ifadesini kullanılırız.
 
-
-
-
-
+#-------------------------------------------------
 
 
 
