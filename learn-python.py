@@ -869,6 +869,87 @@ for i in maaslar:
     print(toplam_maas) # 15000
 
 #-------------------------------------------------
+# DÖNGÜ VE FONKSİYONLARIN BİRLİKTE KULLANIMI
+
+def kare_al(x):
+    print(x**2)
+    
+kare_al(2)
+
+maaslar = [1000,2000,3000,4000,5000]
+
+for i in maaslar:
+    print(i)
+
+# Maaşlara yüzde 20 zam yapılacak. Gerekli kodları yazınız.
+
+maaslar[0] * 20 / 100 + maaslar[0]
+maaslar[1] * 20 / 100 + maaslar[1]
+# Binlerce kişinin maaşı bu şekilde hesaplanamaz. Bir döngü yazılması gerekli ve fonksiyon yazılmalı.
+
+def zamli_maas(x):
+    print(x)
+
+zamli_maas(4) # 4
+
+def zamli_maas(x):
+    print(x * 20 / 100 + x)
+
+zamli_maas(1000) # 1200 . Bu yöntem hala yeterli değil
+
+for i in maaslar:
+    zamli_maas(i) #1200.0
+                  #2400.0
+                  #3600.0
+                  #4800.0
+                  #6000.0
+
+#-------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
