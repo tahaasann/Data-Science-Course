@@ -783,15 +783,37 @@ if gelir == sinir:
 else:
     print("Gelir sinira eşit değildir") # Gelir sinira eşittir
 
+#-------------------------------------------------
+# ELİF
+sinir = 50000
+gelir1 = 60000
+gelir2 = 50000
+gelir3 = 35000
+
+if gelir1 > sinir: 
+    print("Tebrikler. Prim kazandınız.") # Tebrikler. Prim kazandınız
+elif gelir1 < sinir:
+    print("Daha karlı satışlar yapmalısınız.")
+else:
+    print("Denetime devam edelim.") 
 
 
+if gelir2 > sinir: 
+    print("Tebrikler. Prim kazandınız.") 
+elif gelir2 < sinir:
+    print("Daha karlı satışlar yapmalısınız.")
+else:
+    print("Denetime devam edelim.") # Denetime devam edelim.
 
 
+if gelir3 > sinir: 
+    print("Tebrikler. Prim kazandınız.") 
+elif gelir3 < sinir:
+    print("Daha karlı satışlar yapmalısınız.")
+else:
+    print("Denetime devam edelim.")  # Daha karlı satışlar yapmalısınız.
 
-
-
-
-
+#-------------------------------------------------
 
 
 
