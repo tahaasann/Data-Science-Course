@@ -814,10 +814,19 @@ else:
     print("Denetime devam edelim.")  # Daha karlı satışlar yapmalısınız.
 
 #-------------------------------------------------
+# UYGULAMA (İF VE İNPUT İLE KULLANICI ETKİLEŞİMLİ PROGRAM)
+sinir = 50000
+magaza_adi = input("Magaza adi nedir? ")
+gelir = int(input("Gelirinizi Giriniz: ")) # str olarak alındığı için TypeError hatası verdi.
 
+if gelir > sinir:
+    print("Tebrikler! " + magaza_adi + " İyi gidiyorsunuz")
+elif gelir < sinir:
+    print("Biraz daha gayret edin " + str(gelir) + " ile zarardasınız") # Print fonksiyonunda string, int ile birleşemiyor. Bunun için intleri string çevirmek zorundayız.
+else:
+    print("Ha gayret. Neredeyse kar edeceksiniz.")
 
-
-
+#-------------------------------------------------
 
 
 
