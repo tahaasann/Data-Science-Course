@@ -684,6 +684,63 @@ print(cikti) # 8.357142857142858
 # Eğer bir fonksiyonun çıktısını başka bir fonksiyonun veya işlemin girdisi olarak kullanmak istiyorsak, bu durumda return ifadesini kullanılırız.
 
 #-------------------------------------------------
+# LOCAL VE GLOBAL DEĞİŞKENLER
+# Ana çalışma alanımızdaki değişkenler global değişkenlerdir, lokal değişkenler fonksiyonların etki alanlarında tanımlanmış değişkenlerdir
+
+x = 10 # global değişkenlerdir
+y = 20 # global değişkenlerdir
+
+def carpma_yap(x = 2, y = 1): # x ve y lokal değişkenlerdir
+    return x*y
+
+carpma_yap(2, 3) # 6
+
+#-------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
