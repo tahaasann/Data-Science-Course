@@ -598,6 +598,7 @@ def kare_al(x):
 
 kare_al(3) # 9
 #-------------------------------------------------
+#11-07-2024
 # BİLGİ NOTUYLA ÇIKTI ÜRETMEK
 
 def kare_al(x):
@@ -616,12 +617,15 @@ def kare_al(x):
 
 kare_al(3) # Girilen sayı: 3, Karesi: 9
 
+#-------------------------------------------------
+# İKİ ARGÜMANLI FONKSİYON TANIMLAMAK
 
+def carpma_yap(x, y):
+    print(x*y)
 
+carpma_yap(3, 5) # 15
 
-
-
-
+#-------------------------------------------------
 
 
 
