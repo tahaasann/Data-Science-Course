@@ -922,16 +922,36 @@ for i in maaslar:
     else:
         maas_alt(i)
 #-------------------------------------------------
+# BREAK & CONTİNUE
+# Döngüler içerisinde bazen belirli bir şartı sağlayan elemanlar yakalandığında(ifler ile yakalanır), döngü bitirilmek istenebilir yada bu şartı sağlayan eleman görmezden gelinmek istenebilir. İşte bu durumlarda break & continue ifadeleri kullanılır.
 
+maaslar = [8000,5000,2000,1000,3000,7000,1000]
 
+dir(maaslar)
 
+maaslar.sort()
+maaslar
 
+for i in maaslar:
+    if i == 3000:
+        print("kesildi")
+        break
+    print(i) # 1000
+             # 1000
+             # 2000
+             # kesildi
 
+for i in maaslar:
+    if i == 3000:
+        continue
+    print(i) # 1000
+             # 1000
+             # 2000
+             # 5000
+             # 7000
+             # 8000
 
-
-
-
-
+#-------------------------------------------------
 
 
 
