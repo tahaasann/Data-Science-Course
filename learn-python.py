@@ -827,9 +827,22 @@ else:
     print("Ha gayret. Neredeyse kar edeceksiniz.")
 
 #-------------------------------------------------
+# FOR DÖNGÜLERİ
+# İteratif işlemleri yerine getirmek için kullandığımız yapılardır.
 
+ogrenci = ["ali", "veli", "isik", "berk"]
 
+ogrenci[0] # ali 
+ogrenci[1] # veli 
+# peki ya elimizde 1000 tane veri olsa hepsini teker teker yazmak zorunda mıyız? Hayır değiliz.
 
+for i in ogrenci: # for döngüsü
+    print(i)    #ali
+                #veli
+                #isik
+                #berk
+
+#-------------------------------------------------
 
 
 
