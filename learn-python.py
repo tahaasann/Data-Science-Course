@@ -649,11 +649,18 @@ def carpma_yap(x, y = 1):
 carpma_yap(y = 2, x = 3) # 6 X'in değeri: 3 Y'nin değeri: 2, Argümanların isimlerini biliyoruz fakat sıralarını bilmiyorsak önemli değil, sıralamadan bağımsız olarak argümanlara değer verebiliriz.
 
 #-------------------------------------------------
+# NE ZAMAN FONKSİYON YAZILIR?
+# Fonksiyonlar, tekrar eden görevleri yerine getirmek ve var olan işleri daha programatik şekilde gerçekleştirmek için kullanılır. Sık tekrar eden veya uzun işlemlerden kurtulmak adına fonksiyonları kullanırız.
 
+# isi, nem, sarj
+(40+25)/90 # 0.7222222222222222
 
+def direk_hesap(isi, nem, sarj): # ihtiyaca fonksiyon giydirmek
+    print((isi + nem) / sarj)
 
+direk_hesap(25, 40, 70) # 0.9285714285714286
 
-
+#-------------------------------------------------
 
 
 
