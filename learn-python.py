@@ -696,18 +696,31 @@ def carpma_yap(x = 2, y = 1): # x ve y lokal değişkenlerdir
 carpma_yap(2, 3) # 6
 
 #-------------------------------------------------
+# LOCAL ETKİ ALANINDAN GLOBAL ETKİ ALANINI DEĞİŞTİRME
+# Tanımlamış olduğumuz bir fonksiyon ya da yazıyor olduğumuz bir döngü içerisinde global değişkenlerin değerlerinde bir değişiklik yapmak istersek ne yapacağız?
 
+x = []
 
+def eleman_ekle(y):
+    x.append(y) # liste'ye y'yi ekle
+    print(str(y) + " ifadesi eklendi")
 
+eleman_ekle(5)
+x # [5]
+eleman_ekle('a')
+x # [5, 'a']
 
+x = []
 
+# del x
 
+def eleman_ekle(y):
+    x.append(y) # liste'ye y'yi ekle
+    print(str(y) + " ifadesi eklendi")
 
+eleman_ekle(5) # NameError: X bulunamadı. Çünkü x'i sildik.
 
-
-
-
-
+#-------------------------------------------------
 
 
 
