@@ -757,11 +757,31 @@ if gelir > sinir:
     print("Gelir sinirdan büyük") # Gelir sinirdan büyük
     
 #-------------------------------------------------
+# ELSE
 
+sinir = 50000
+gelir = 35000
 
+if gelir > sinir: 
+    print("Gelir sinirdan büyük")
+else:
+    print("Gelir sinirdan küçük") # Gelir sinirdan küçük
 
+sinir = 50000
+gelir = 51000
 
+if gelir == sinir: 
+    print("Gelir sinira eşittir")
+else:
+    print("Gelir sinira eşit değildir") # Gelir sinira eşit değildir
 
+sinir = 50000
+gelir = 50000
+
+if gelir == sinir: 
+    print("Gelir sinira eşittir")
+else:
+    print("Gelir sinira eşit değildir") # Gelir sinira eşittir
 
 
 
