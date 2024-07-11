@@ -626,15 +626,29 @@ def carpma_yap(x, y):
 carpma_yap(3, 5) # 15
 
 #-------------------------------------------------
+# ÖN TANIMLI ARGÜMANLAR
+# Kullanıcıların hata yapma ihtimallerini önlemek adına, bazı argümanları ön tanımlı olarak veririz.
 
+def carpma_yap(x, y):
+    print(x*y)
 
+carpma_yap(3) # TypeError, gereken bir argüman yok 'y'
 
+def carpma_yap(x, y = 1):
+    print(x*y)
 
+carpma_yap(3) # 3
 
+carpma_yap(3, 4) # 12, argümanda 1 verdik diye her zaman 1 olmaz.  Ön tanımlı değeri göz ardı eder.
 
+# Argümanların Sıralaması
+def carpma_yap(x, y = 1):
+    print(x*y)
+    print("X'in değeri: " + str(x) + " Y'nin değeri: " + str(y))
 
+carpma_yap(y = 2, x = 3) # 6 X'in değeri: 3 Y'nin değeri: 2, Argümanların isimlerini biliyoruz fakat sıralarını bilmiyorsak önemli değil, sıralamadan bağımsız olarak argümanlara değer verebiliriz.
 
-
+#-------------------------------------------------
 
 
 
