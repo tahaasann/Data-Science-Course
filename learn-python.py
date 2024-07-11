@@ -952,9 +952,16 @@ for i in maaslar:
              # 8000
 
 #-------------------------------------------------
+# WHİLE
+# While, bu şart sağlandığı sürece demektir.
 
+sayi = 1
 
-
+while sayi < 10:
+    print(sayi) # 1 2 3 4 5 6 7 8 9
+    sayi += 1 
+    
+#-------------------------------------------------
 
 
 
