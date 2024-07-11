@@ -905,16 +905,23 @@ for i in maaslar:
                   #6000.0
 
 #-------------------------------------------------
+# İF, FOR VE FONKSİYONLARIN BİRLİKTE KULLANIMI
 
+# Maaşı 3000'den az olanlara %20, 3000'den fazla olanlara %10 zam yapacağız.
+maaslar = [1000,2000,3000,4000,5000]
 
+def maas_ust(x):
+    print(x*10/100+x)
 
+def maas_alt(x):
+    print(x*20/100+x)
 
-
-
-
-
-
-
+for i in maaslar:
+    if i >= 3000:
+        maas_ust(i)
+    else:
+        maas_alt(i)
+#-------------------------------------------------
 
 
 
