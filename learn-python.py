@@ -968,8 +968,8 @@ while sayi < 10:
 
 # Class(Sınıf) nedir? Benzer özellikler, ortak amaçlar taşıyan, içerisinde metod ve değişkenler olan yapılardır.
 
-#class VeriBilimci():
-#    print("Bu bir siniftir")    
+class VeriBilimci():
+    print("Bu bir siniftir")    
 
 #-------------------------------------------------
 # SINIF ÖZELLİKLERİ(CLASS ATTRİBUTES)
@@ -1005,6 +1005,50 @@ veli.sql # 'Hayir'
 veli.bildigi_diller # ['Python'] ali.bildigi_diller.append("Python") # Burada yapılan değişiklik tüm sınıfa mal oldu
 
 #-------------------------------------------------
+# ÖRNEK ÖZELLİKLERİ
+# Herbir örneğin kendi içerisinde değişen özelliklerden oluşabilmesi sağlayacağız. 
+
+class VeriBilimci(): # Sınıf özellikleriyle, örnek özelliklerini aynı isimlerde yapmak doğru bir yaklaşım değildir. Biraz daha farklı isimlerle yapmak önemlidir.
+    bildigi_diller = ["R", "Python"]
+    bolum = ''
+    sql = '' 
+    deneyim_yili = 0
+    def __init__(self):
+        self.bildigi_diller = []
+        self.bolum = ''
+
+ali = VeriBilimci()
+ali.bildigi_diller # []
+
+veli = VeriBilimci()
+veli.bildigi_diller # []
+
+ali.bildigi_diller.append("Python")
+ali.bildigi_diller # ['Python']
+
+veli.bildigi_diller # []
+veli.bildigi_diller.append("R")
+veli.bildigi_diller # ['R']
+
+VeriBilimci.bildigi_diller # AttributeError: Hiçbir özelliği yok şeklinde hata verdi. Class'ın ilk halinde VeriBilimci class'ına özellik atamadığımız için bu hatayı aldık. VeriBilimci class'ını tanımlarken def __init__ öncesinde özellik atadığımız zaman classın özelliklerini belirtir. Bizim classımızdaki özellik de ['R', 'Python'] olur.
+
+VeriBilimci.bolum # '' Sınıfın özelliği
+ali.bolum = "istatistik"
+VeriBilimci.bolum # ''
+veli.bolum # ''
+veli.bolum = 'end_muh'
+veli.bolum # 'end_muh'
+ali.bolum # 'istatistik'
+VeriBilimci.bolum # ''
+
+#-------------------------------------------------
+
+
+
+
+
+
+
 
 
 
