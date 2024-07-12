@@ -968,15 +968,27 @@ while sayi < 10:
 
 # Class(Sınıf) nedir? Benzer özellikler, ortak amaçlar taşıyan, içerisinde metod ve değişkenler olan yapılardır.
 
-class VeriBilimci():
-    print("Bu bir siniftir")    
+#class VeriBilimci():
+#    print("Bu bir siniftir")    
 
 #-------------------------------------------------
+# SINIF ÖZELLİKLERİ(CLASS ATTRİBUTES)
 
+class VeriBilimci():
+    bolum = ''
+    sql = 'Evet' # Ön kabul evet
+    deneyim_yili = 0
+    bildigi_diller = []
 
+# Siniflarin özelliklerine erismek
+VeriBilimci.bolum
+VeriBilimci.sql
 
+# Sınıfların özelliklerini değiştirmek
+VeriBilimci.sql = "Hayir"
+VeriBilimci.sql # 'Hayır'
 
-
+#-------------------------------------------------
 
 
 
