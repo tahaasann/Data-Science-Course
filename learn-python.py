@@ -961,10 +961,17 @@ while sayi < 10:
     print(sayi) # 1 2 3 4 5 6 7 8 9
     sayi += 1 
     
+#12-07-2024
 #-------------------------------------------------
+# NESNE YÖNELİMLİ PROGRAMLAMA
+# SINIFLARA(CLASS) GİRİŞ VE SINIF TANIMLAMAK
 
+# Class(Sınıf) nedir? Benzer özellikler, ortak amaçlar taşıyan, içerisinde metod ve değişkenler olan yapılardır.
 
+class VeriBilimci():
+    print("Bu bir siniftir")    
 
+#-------------------------------------------------
 
 
 
