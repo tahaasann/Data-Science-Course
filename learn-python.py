@@ -989,15 +989,22 @@ VeriBilimci.sql = "Hayir"
 VeriBilimci.sql # 'Hayır'
 
 #-------------------------------------------------
+# SINIF ÖRNEKLENDİRMESİ(INSTANTİATİON)
 
+ali = VeriBilimci()
 
+ali.sql # 'Hayir'
+ali.deneyim_yili # 0
+ali.bolum # ''
+ali.bildigi_diller.append("Python") 
+ali.bildigi_diller # ['Python']
 
+veli = VeriBilimci()
+veli.sql # 'Hayir'
 
+veli.bildigi_diller # ['Python'] ali.bildigi_diller.append("Python") # Burada yapılan değişiklik tüm sınıfa mal oldu
 
-
-
-
-
+#-------------------------------------------------
 
 
 
