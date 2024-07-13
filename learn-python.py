@@ -1262,18 +1262,32 @@ yeni_maas(4000) # 4800.0
 hm.maaslar # [1000, 2000, 3000, 5000]
 
 #-------------------------------------------------
+# HATALAR(BUG) & İSTİSNALAR(EXCEPTİONS)
 
+# ZeroDivisionError hatası
+a = 10
+b = 0
+a/b # ZeroDivisionError, paydada 0 olamaz. Buna koyacağımız önlem try-except yapısıdır.
 
+try:
+    print(a/b)
+except ZeroDivisionError: # İstisna olarak gör
+    print("Paydada sifir olmaz") # Paydada sifir olmaz
 
+# TypeError hatası
+a=10
+b="2"
 
+a/b # TypeError: int ve string birbirine bölünmez.
 
+try:
+    print(a/b)
+except TypeError: # İstisna olarak gör
+    print("İntegerlar stringler ile bölünmez") # İntegerlar stringler ile bölünmez
 
-
-
-
-
-
-
+#-------------------------------------------------
+# Programcılık ve Veri Bilimciliği yaptığımız müdetce, süremizin büyük çoğunluğu hata ayıklama ve problem çözme sırasında geçecek.
+#-------------------------------------------------
 
 
 
