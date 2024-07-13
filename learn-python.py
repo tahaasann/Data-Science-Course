@@ -1288,8 +1288,8 @@ except TypeError: # İstisna olarak gör
 #-------------------------------------------------
 # Programcılık ve Veri Bilimciliği yaptığımız müdetce, süremizin büyük çoğunluğu hata ayıklama ve problem çözme sırasında geçecek.
 #-------------------------------------------------
-
-
+# LEARN-PYTHON MODÜLÜ BİTTİ. TEBRİKLER
+#-------------------------------------------------
 
 
 
