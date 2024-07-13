@@ -1245,10 +1245,23 @@ reduce(lambda a,b : a + b, liste) # 10
 ### Fonksiyonel programlama, işlerimizi daha kolay hale getiren, daha az yan etkileri ve daha az problemler oluşturan yapılardır.
 
 #-------------------------------------------------
+# MODÜL OLUŞTURMAK
+# Modül, kütüphane, paket oluşturmak da denebilir.
 
+import HesapModulu
 
+HesapModulu.yeni_maas(1000) # 1200.0
 
+import HesapModulu as hm
 
+hm.yeni_maas(2000) # 2400.0
+
+from HesapModulu import yeni_maas
+yeni_maas(4000) # 4800.0
+
+hm.maaslar # [1000, 2000, 3000, 5000]
+
+#-------------------------------------------------
 
 
 
