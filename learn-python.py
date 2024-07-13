@@ -1118,13 +1118,20 @@ ali.FirstName # 'a'
 # Daha esnek ve bizi daha iyi anlayan bir programlama yaklaşımıdır.
 
 #-------------------------------------------------
+# YAN ETKİSİZ FONKSİYONLAR ÖRNEK 1
 
+A = 9
 
+def impure_sum(b):
+    return b + A
 
+def pure_sum(a, b):
+    return a + b
 
+impure_sum(6) # 11 - yeni durum: 15 # Yan etkili: Dışarıdaki bir değişkenden etkilenir. Yan etkili.
+pure_sum(3, 4) # 7 # Dışarıdaki bir değişken etkilenmez. Yan etkisiz
 
-
-
+#-------------------------------------------------
 
 
 
