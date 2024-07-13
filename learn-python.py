@@ -1190,6 +1190,57 @@ sirasiz_liste # [('b', 3), ('a', 8), ('d', 12), ('c', 1)]
 sorted(sirasiz_liste, key = lambda x: x[1]) # [('c', 1), ('b', 3), ('a', 8), ('d', 12)]
 
 #-------------------------------------------------
+# VEKTÖREL OPERASYONLAR (VECTOREL OPERATİONS)
+# OOP
+a = [1,2,3,4]
+b = [2,3,4,5]
+
+ab = []
+
+range(0,len(a)) # range(0,4)
+
+for i in range(0, len(a)):
+    #print(i) # 0 1 2 3
+    ab.append(a[i]*b[i])
+
+ab  # [2, 6, 12, 20]
+
+# FP - VECTOREL OPERATIONS
+
+import numpy as np
+a = np.array([1,2,3,4])
+b = np.array([2,3,4,5])
+
+a*b # array([ 2,  6, 12, 20])
+
+#-------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
