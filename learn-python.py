@@ -1073,6 +1073,75 @@ veli.dil_ekle("Python")
 veli.bildigi_diller # ['Python']
 
 #-------------------------------------------------
+# MİRAS YAPILARI (INHERİTANCE)
+# Yeni bir class, eski bir class'ın özelliklerini kullanıyorsa, buna eski class'tan özellikleri miras aldığı anlamına gelir.
+
+class Employees():
+    def __init__(self): # Sabit değerler
+        self.FirstName = ""
+        self.LastName = ""
+        self.Address = ""
+
+class DataScience(Employees):
+    def __init__(self):
+        self.Programming = ""
+
+veribilimci1 = DataScience()
+#veribilimci1.  
+
+      
+class Marketing(Employees):
+    def __init__(self):
+        self.StoryTelling = ""
+
+mar1 = Marketing()
+#mar1.
+
+class Employee_yeni():
+    def __init__(self, FirstName, LastName, Address): #Değişken değerler olması için
+        self.FirstName = FirstName
+        self.LastName = LastName
+        self.Address = Address
+
+ali = Employee_yeni("a","b","c") # TypeError, argümanlar boş girildi
+ali.Address # 'c'
+ali.FirstName # 'a'
+
+# Burada bir sınıfı tıpki bir fonksiyon gibi belirli argümanlar alarak oluşturmak adına bu şekilde tanımlamış olduk. Önceki tanımladığımız şekliyle ise sabit değerlerden oluşur.
+    
+#-------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
