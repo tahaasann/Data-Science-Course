@@ -1189,6 +1189,8 @@ sirasiz_liste # [('b', 3), ('a', 8), ('d', 12), ('c', 1)]
 
 sorted(sirasiz_liste, key = lambda x: x[1]) # [('c', 1), ('b', 3), ('a', 8), ('d', 12)]
 
+# bu davranışlara izin veren fonksiyonlara first class fonksiyon denir.
+
 #-------------------------------------------------
 # VEKTÖREL OPERASYONLAR (VECTOREL OPERATİONS)
 # OOP
@@ -1214,15 +1216,35 @@ b = np.array([2,3,4,5])
 a*b # array([ 2,  6, 12, 20])
 
 #-------------------------------------------------
+# MAP, FİLTER VE REDUCE FONKSİYONLARI
+
+# map fonksiyonu bize, verilen bir vektörün içerisinde belirli bir fonksiyonu çalıştırma imkanı verir. vektör: liste, fonksiyon: lambda x: x + 10
+liste = [1,2,3,4,5]
+
+for i in liste:
+    print(i+10) # 11 12 13 14 15
+    
+list(map(lambda x: x + 10, liste)) # [11, 12, 13, 14, 15]
 
 
+# filter: iteratif bir nesne alarak çalışır. bu iteratif nesne üzerinden başka bir iteratif nesne oluşturulur, ve iteratif nesne içinde aradığı şartın sağlandığı tüm elemanlar filtrelenir.
 
+liste = [1,2,3,4,5,6,7,8,9,10]
 
+list(filter(lambda x : x % 2 == 0, liste)) # [2, 4, 6, 8, 10]
 
+# reduce: map ve filter'a benzerdir fakat reduce indirgeme yapar.
 
+from functools import reduce
 
+liste = [1,2,3,4]
+reduce(lambda a,b : a + b, liste) # 10
 
+#-------------------------------------------------
 
+### Fonksiyonel programlama, işlerimizi daha kolay hale getiren, daha az yan etkileri ve daha az problemler oluşturan yapılardır.
+
+#-------------------------------------------------
 
 
 
