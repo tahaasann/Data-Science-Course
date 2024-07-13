@@ -1132,11 +1132,46 @@ impure_sum(6) # 11 - yeni durum: 15 # Yan etkili: Dışarıdaki bir değişkende
 pure_sum(3, 4) # 7 # Dışarıdaki bir değişken etkilenmez. Yan etkisiz
 
 #-------------------------------------------------
+# YAN ETKİSİZ FONKSİYONLAR - ÖRNEK 2
+# Class'ların içerisindeki yapıların birbirini etkilemesi yan etkili anlamına gelir. Fonksiyonlarda farklı bir girdi verildiği zaman ancak çıktı değişir. Bağımsızdır.
 
+#OOP
+class LineCounter:
+    def __init__(self, filename):
+        self.file = open(filename, 'r')
+        self.lines = []
+    
+    def read(self):
+        self.lines = [line for line in self.file]
+    
+    def count(self):
+        return len(self.lines)
 
+lc = LineCounter('deneme.txt')
 
+print(lc.lines) # []
+print(lc.count()) # 0
 
+lc.read()
 
+print(lc.lines) # ['bunlar bir denemedir\n', '\n', 'asdasd\n', '\n', 'asdasd\n', 'adsasd\n']
+print(lc.count()) # 6
+
+# Bu duruma iç nesnenin durum değişmesi denir. Bir class'ın içerisindeki bir fonksiyonu kullanmadan önceki değerlerin boş ve 0 olduğunu gözlemledik. Class içi fonksiyonunu kullandıktan sonra değerlerin değiştiğini gözlemledik. Bu değişkenlik durumu rahatsız edici bir durumdur. Nesne durumlarının kolayca değişebiliyor olması belki bir nimettir, ama sürekli bir endişe hissi uyandırması da bir problemdir.
+
+#FP
+def read(filename):
+    with open(filename, 'r') as f:
+        return [line for line in f]
+
+def count(lines):
+    return len(lines)
+
+example_lines = read('deneme.txt')
+lines_count = count(example_lines)
+lines_count # 6
+
+#-------------------------------------------------
 
 
 
