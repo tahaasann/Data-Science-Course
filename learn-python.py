@@ -1006,9 +1006,9 @@ veli.bildigi_diller # ['Python'] ali.bildigi_diller.append("Python") # Burada ya
 
 #-------------------------------------------------
 # ÖRNEK ÖZELLİKLERİ
-# Herbir örneğin kendi içerisinde değişen özelliklerden oluşabilmesi sağlayacağız. 
+# Herbir örneğin kendi içerisinde değişen özelliklerden oluşabilmesini sağlayacağız. 
 
-class VeriBilimci(): # Sınıf özellikleriyle, örnek özelliklerini aynı isimlerde yapmak doğru bir yaklaşım değildir. Biraz daha farklı isimlerle yapmak önemlidir.
+class VeriBilimci(): # Sınıf özellikleriyle, örnek özelliklerini aynı isimlerle yapmak doğru bir yaklaşım değildir. Biraz daha farklı isimlerle yapmak önemlidir.
     bildigi_diller = ["R", "Python"]
     bolum = ''
     sql = '' 
@@ -1107,12 +1107,12 @@ ali = Employee_yeni("a","b","c") # TypeError, argümanlar boş girildi
 ali.Address # 'c'
 ali.FirstName # 'a'
 
-# Burada bir sınıfı tıpki bir fonksiyon gibi belirli argümanlar alarak oluşturmak adına bu şekilde tanımlamış olduk. Önceki tanımladığımız şekliyle ise sabit değerlerden oluşur.
+# Burada bir sınıfı, tıpki bir fonksiyon gibi belirli argümanlar alarak oluşturmak adına bu şekilde tanımlamış olduk. Önceki tanımladığımız şekliyle ise sabit değerlerden oluşur.
     
 #-------------------------------------------------
 # FONKSİYONEL PROGRAMLAMAYA GİRİŞ
 # Fonksiyonlar daha esnek bir çalışma ortamıdır.
-# Yan etkisi fonksiyonlar vardır.(stateless, girdi-cikti) bir girdi verildiğinde ancak çıktı üretir. (Nesne Yönelimli Programlamada eleştirel bir konudan bahsediyoruz: Bazı kullanmış olduğumuz metodların, kullanıcının isteği dışında etkilenebilip bozulabilmesi durumudur ve bir şekilde Veri Yapılarında meydana gelen bu bozukluklar ve takip edilememe durumu bazı riskler doğurmaktadır. Yan etkisiz fonksiyonlar, Class gibi yapılardaki gibi bağımlılıklardan oluşmadığından dolayı, yan etkilerinden emin oluruz. Yani, ancak biz bir fonksiyonu kullandığımızda, bunun hiç bir şeyi etkilemediğini ve ancak biz bir girdi verdiğimizde çıktı üreteceğini biliyoruz. )
+# Yan etkisiz fonksiyonlar vardır.(stateless, girdi-cikti) bir girdi verildiğinde ancak çıktı üretir. (Nesne Yönelimli Programlamada eleştirel bir konudan bahsediyoruz: Bazı kullanmış olduğumuz metodların, kullanıcının isteği dışında etkilenebilip bozulabilmesi durumudur ve bir şekilde Veri Yapılarında meydana gelen bu bozukluklar ve takip edilememe durumu bazı riskler doğurmaktadır. Yan etkisiz fonksiyonlar, Class gibi yapılardaki gibi bağımlılıklardan oluşmadığından dolayı, yan etkilerinden emin oluruz. Yani, ancak biz bir fonksiyonu kullandığımızda, bunun hiç bir şeyi etkilemediğini ve ancak biz bir girdi verdiğimizde çıktı üreteceğini biliyoruz. )
 # Yüksek seviye fonksiyonlardır.
 # Vektörel operasyonlardır.
 # Daha esnek ve bizi daha iyi anlayan bir programlama yaklaşımıdır.
